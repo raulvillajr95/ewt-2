@@ -45,8 +45,35 @@ table {
 
 /* Nav Area for Desktop */
 nav {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  align-items: center;
+  height: 8vh;
 
   background-color: coral;
+}
+nav .nav-logo {
+  display: flex;
+  width: 10%;
+  justify-content: space-between;
+
+  background-color: blue;
+}
+nav ul {
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
+
+  background-color: red;
+}
+nav .nav-buttons {
+  display: flex;
+  width: 15%;
+  justify-content: space-between;
+
+  background-color: green;
 }
 
 /* Main Area for Desktop */
@@ -145,17 +172,33 @@ nav {
 
 /* Footer Area for Desktop */
 footer {
+  height: 45vh;
+
+  background-color: orange;
+}
+footer .footer-div {
   display: flex;
+  width: 90%;
   flex-direction: column;
+  margin: 0 auto;
+  height: 100%;
+  justify-content: space-between;
 
   background-color: coral;
 }
 footer .footer-links {
   display: flex;
+  justify-content: space-between;
+  height: 60%;
+
+  background-color: lavender;
 }
 footer .mission-statement {
   display: flex;
   flex-direction: column;
+  width: 20%;
+
+  background-color: red;
 }
 footer .footer-logo {
   display: flex;
@@ -163,11 +206,21 @@ footer .footer-logo {
 footer .link-area {
   display: flex;
   flex-direction: column;
+  width: 15%;
+
+  background-color: blue;
 }
 footer .footer-contact {
   display: flex;
   flex-direction: column;
+  width: 20%;
+
+  background-color: green;
 }
 footer .footer-contact .footer-socials {
   display: flex;
+}
+footer .footer-copyright {
+
+  background-color: lavender;
 }
