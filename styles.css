@@ -44,6 +44,10 @@ table {
 }
 
 /* Nav Area for Desktop */
+nav {
+
+  background-color: coral;
+}
 
 /* Main Area for Desktop */
 .sec-1 {
@@ -87,19 +91,83 @@ table {
 
   background-color: lightgrey;
 }
+.sec-5 .s5-content {
+  display: flex;
+  flex-direction: column;
+}
 .sec-6 {
   display: flex;
   flex-direction: column;
 
   background-color: gray;
 }
-.sec-6 .reviews {
+.sec-6 .review-area {
   display: flex;
+}
+.sec-6 .rev-1 {
+  display: flex;
+  flex-direction: column;
+}
+.sec-6 .person {
+  display: flex;
+}
+.sec-6 .person-info {
+  display: flex;
+  flex-direction: column;
+}
+.sec-6 .stars {
+  display: flex;
+}
+.sec-6 .rev-2 {
+  display: flex;
+  flex-direction: column;
+}
+.sec-6 .rev-3 {
+  display: flex;
+  flex-direction: column;
 }
 .sec-7 {
   display: flex;
 
   background-color: lightgrey;
 }
+.sec-7 .s7-content {
+  display: flex;
+  flex-direction: column;
+}
+.sec-7 .s7-questions {
+  display: flex;
+  flex-direction: column;
+}
+.sec-7 .question {
+  display: flex;
+}
 
 /* Footer Area for Desktop */
+footer {
+  display: flex;
+  flex-direction: column;
+
+  background-color: coral;
+}
+footer .footer-links {
+  display: flex;
+}
+footer .mission-statement {
+  display: flex;
+  flex-direction: column;
+}
+footer .footer-logo {
+  display: flex;
+}
+footer .link-area {
+  display: flex;
+  flex-direction: column;
+}
+footer .footer-contact {
+  display: flex;
+  flex-direction: column;
+}
+footer .footer-contact .footer-socials {
+  display: flex;
+}
