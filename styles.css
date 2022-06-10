@@ -186,41 +186,83 @@ footer .footer-div {
 
   background-color: coral;
 }
+.footer-div hr {
+  width: 100%;
+}
 footer .footer-links {
   display: flex;
   justify-content: space-between;
-  height: 60%;
-
-  background-color: lavender;
+  height: 65%;
+  padding-top: 10%;
 }
 footer .mission-statement {
   display: flex;
   flex-direction: column;
   width: 20%;
-
-  background-color: red;
+  height: 60%;
+  justify-content: space-between;
 }
 footer .footer-logo {
   display: flex;
+  justify-content: space-between;
+  width: 40%;
 }
-footer .link-area {
+footer .link-area-1 {
   display: flex;
   flex-direction: column;
   width: 15%;
-
-  background-color: blue;
+  justify-content: space-between;
+  height: 75%;
+}
+.link-area-title {
+  height: 35%;
+}
+.link-area-1 ul {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+footer .link-area-2 {
+  display: flex;
+  flex-direction: column;
+  width: 15%;
+  justify-content: space-between;
+  height: 65%;
+}
+.link-area-2 ul {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+footer .link-area-3 {
+  display: flex;
+  flex-direction: column;
+  width: 15%;
+  justify-content: space-between;
+  height: 85%;
+}
+.link-area-3 ul {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 footer .footer-contact {
   display: flex;
   flex-direction: column;
   width: 20%;
-
-  background-color: green;
+  justify-content: space-between;
+  height: 50%;
 }
 footer .footer-contact .footer-socials {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-footer .footer-copyright {
 
-  background-color: lavender;
+footer .footer-copyright {
+  height: 20%;
+  text-align: center;
 }
