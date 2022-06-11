@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+:root {
+  --main-font-color: #141414;
+  --secondary-font-color: #F3F3F3;
+  --small-font-color: #b1b1b1;
+  --main-website-color: #0000ff;
+}
+
 /* Reset CSS */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -43,6 +52,11 @@ table {
 	border-spacing: 0;
 }
 
+body {
+  background: linear-gradient(45deg, #efecf6, #f6efec);
+  font-family: 'Poppins';
+}
+
 /* Nav Area for Desktop */
 nav {
   display: flex;
@@ -51,13 +65,17 @@ nav {
   margin: 0 auto;
   align-items: center;
   height: 8vh;
-
-  background-color: coral;
 }
 nav .nav-logo {
   display: flex;
   width: 10%;
   justify-content: space-between;
+}
+nav .nav-logo h4 {
+  
+}
+nav .nav-logo .fa-mountain-sun {
+  color: var(--main-website-color);
 }
 nav ul {
   display: flex;
@@ -76,8 +94,6 @@ nav .nav-buttons {
   width: 90%;
   margin: 0 auto;
   height: 90vh;
-
-  background-color: lightgrey;
 }
 .sec-1 .intro {
   display: flex;
@@ -89,6 +105,7 @@ nav .nav-buttons {
   display: flex;
   width: 100%;
   height: 30vh;
+  background: linear-gradient(80deg, #0000ff, #0080ff);
 }
 .sec-2 .s2-content {
   display: flex;
@@ -97,8 +114,6 @@ nav .nav-buttons {
   height: 100%;
   justify-content: space-between;
   align-items: center;
-
-  background-color: gray;
 }
 .sec-2 .s2-content-item {
   display: flex;
@@ -114,8 +129,6 @@ nav .nav-buttons {
   height: 50vh;
   justify-content: center;
   align-items: center;
-
-  background-color: lightgrey;
 }
 .sec-3 .s3-content {
   display: flex;
@@ -145,8 +158,6 @@ nav .nav-buttons {
   margin: 0 auto;
   height: 65vh;
   justify-content: space-between;
-
-  background-color: gray;
 }
 .sec-4 .s4-content {
   display: flex;
@@ -198,8 +209,6 @@ nav .nav-buttons {
   width: 90%;
   margin: 0 auto;
   height: 65vh;
-
-  background-color: lightgrey;
 }
 .sec-5 .s5-content {
   display: flex;
@@ -217,8 +226,6 @@ nav .nav-buttons {
   margin: 0 auto;
   height: 65vh;
   justify-content: center;
-
-  background-color: gray;
 }
 .sec-6 .top-area {
   display: flex;
@@ -273,8 +280,6 @@ nav .nav-buttons {
   margin: 0 auto;
   height: 40vh;
   align-items: center;
-
-  background-color: lightgrey;
 }
 .sec-7 .s7-content {
   display: flex;
@@ -302,9 +307,14 @@ nav .nav-buttons {
   justify-content: space-between;
 }
 
+body {
+  color: #141414;
+}
+
 /* Footer Area for Desktop */
 footer {
   height: 45vh;
+  background: linear-gradient(83deg, #0000ff, #0080ff);
 }
 footer .footer-div {
   display: flex;
@@ -313,8 +323,6 @@ footer .footer-div {
   margin: 0 auto;
   height: 100%;
   justify-content: space-between;
-
-  background-color: coral;
 }
 .footer-div hr {
   width: 100%;
