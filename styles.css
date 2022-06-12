@@ -52,11 +52,6 @@ table {
 	border-spacing: 0;
 }
 
-body {
-  background: linear-gradient(45deg, #efecf6, #f6efec);
-  font-family: 'Poppins';
-}
-
 /* Nav Area for Desktop */
 nav {
   display: flex;
@@ -65,17 +60,13 @@ nav {
   margin: 0 auto;
   align-items: center;
   height: 8vh;
+
+  background-color: coral;
 }
 nav .nav-logo {
   display: flex;
   width: 10%;
   justify-content: space-between;
-}
-nav .nav-logo h4 {
-  
-}
-nav .nav-logo .fa-mountain-sun {
-  color: var(--main-website-color);
 }
 nav ul {
   display: flex;
@@ -94,6 +85,8 @@ nav .nav-buttons {
   width: 90%;
   margin: 0 auto;
   height: 90vh;
+
+  background-color: lightgrey;
 }
 .sec-1 .intro {
   display: flex;
@@ -105,7 +98,6 @@ nav .nav-buttons {
   display: flex;
   width: 100%;
   height: 30vh;
-  background: linear-gradient(80deg, #0000ff, #0080ff);
 }
 .sec-2 .s2-content {
   display: flex;
@@ -114,6 +106,8 @@ nav .nav-buttons {
   height: 100%;
   justify-content: space-between;
   align-items: center;
+
+  background-color: gray;
 }
 .sec-2 .s2-content-item {
   display: flex;
@@ -129,6 +123,8 @@ nav .nav-buttons {
   height: 50vh;
   justify-content: center;
   align-items: center;
+
+  background-color: lightgray;
 }
 .sec-3 .s3-content {
   display: flex;
@@ -158,6 +154,8 @@ nav .nav-buttons {
   margin: 0 auto;
   height: 65vh;
   justify-content: space-between;
+
+  background-color: gray;
 }
 .sec-4 .s4-content {
   display: flex;
@@ -209,6 +207,8 @@ nav .nav-buttons {
   width: 90%;
   margin: 0 auto;
   height: 65vh;
+
+  background-color: lightgray;
 }
 .sec-5 .s5-content {
   display: flex;
@@ -226,6 +226,8 @@ nav .nav-buttons {
   margin: 0 auto;
   height: 65vh;
   justify-content: center;
+
+  background-color: gray;
 }
 .sec-6 .top-area {
   display: flex;
@@ -280,6 +282,8 @@ nav .nav-buttons {
   margin: 0 auto;
   height: 40vh;
   align-items: center;
+
+  background-color: lightgray;
 }
 .sec-7 .s7-content {
   display: flex;
@@ -314,7 +318,6 @@ body {
 /* Footer Area for Desktop */
 footer {
   height: 45vh;
-  background: linear-gradient(83deg, #0000ff, #0080ff);
 }
 footer .footer-div {
   display: flex;
@@ -323,6 +326,8 @@ footer .footer-div {
   margin: 0 auto;
   height: 100%;
   justify-content: space-between;
+
+  background-color: coral;
 }
 .footer-div hr {
   width: 100%;
@@ -399,8 +404,412 @@ footer .footer-contact .footer-socials {
   justify-content: space-between;
   align-items: center;
 }
-
 footer .footer-copyright {
   height: 20%;
   text-align: center;
+}
+
+/* Tablet CSS */
+@media only screen and (max-width: 56em) {
+  body {
+    font-size: 0.9em;
+
+    background-color: black;
+  }
+
+  /* Nav Area for Tablet */
+
+
+  /* Main Area for Tablet */
+  .sec-1 {
+    height: 80vh;
+  }
+  .sec-2 {
+    height: 25vh;
+  }
+  .sec-4 {
+    height: 55vh;
+  }
+  .sec-5 {
+    height: 55vh;
+  }
+  .sec-6 {
+    height: 55vh;
+  }
+  .sec-7 {
+    height: 35vh;
+  }
+
+  /* Footer Area for Tablet */
+  footer {
+    height: 37vh;
+  }
+}
+
+/* Mobile CSS */
+@media only screen and (max-width: 32em) {
+  body {
+
+    background-color: white;
+  }
+
+  /* Nav Area for Mobile */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+    height: 8vh;
+
+    background-color: coral;
+  }
+  nav .nav-logo {
+    display: flex;
+    width: 10%;
+    justify-content: space-between;
+  }
+  nav ul {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+  }
+  nav .nav-buttons {
+    display: flex;
+    width: 15%;
+    justify-content: space-between;
+  }
+
+  /* Main Area for Mobile */
+  .sec-1 {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    height: 90vh;
+
+    background-color: lightgrey;
+  }
+  .sec-1 .intro {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+  }
+  .sec-1 #imagen {
+    background: red;
+  }
+  .sec-2 {
+    display: flex;
+    width: 100%;
+    height: 30vh;
+  }
+  .sec-2 .s2-content {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: gray;
+  }
+  .sec-2 .s2-content-item {
+    display: flex;
+  }
+  .sec-2 hr {
+    width: 1px;
+    height: 18%;
+  }
+  .sec-3 {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+
+    background-color: lightgray;
+  }
+  .sec-3 .s3-content {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    height: 55%;
+    justify-content: space-between;
+  }
+  .sec-3 .s3-intro {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    justify-content: center;
+  }
+  .sec-3 .s3-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 18%;
+  }
+  .s3-part p {
+    height: 50%;
+  }
+  .sec-4 {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    height: 65vh;
+    justify-content: space-between;
+
+    background-color: gray;
+  }
+  .sec-4 .s4-content {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+  }
+  .sec-4 .s4-content .s4-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 8vh;
+  }
+  .sec-4 .s4-form hr {
+    width: 1px;
+    height: 40%;
+  }
+  .sec-4 .s4-location {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content: space-around;
+    height: 100%;
+  }
+  .sec-4 .s4-location-choice {
+    display: flex;
+    flex-direction: column;
+  }
+  .sec-4 .s4-date {
+    display: flex;
+    align-items: center;
+    width: 35%;
+    justify-content: space-around;
+    height: 100%;
+  }
+  .sec-4 .s4-date-choice {
+    display: flex;
+    flex-direction: column;
+  }
+  .sec-4 .fa-magnifying-glass {
+    display: flex;
+    width: 15%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .sec-5 {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    height: 65vh;
+
+    background-color: lightgray;
+  }
+  .sec-5 .s5-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+  }
+  .sec-5 .s5-content button {
+    width: 25%;
+  }
+  .sec-6 {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    height: 65vh;
+    justify-content: center;
+
+    background-color: gray;
+  }
+  .sec-6 .top-area {
+    display: flex;
+    justify-content: space-between;
+    height: 15vh;
+    align-items: center;
+  }
+  .sec-6 .top-arrows {
+    display: flex;
+    justify-content: space-between;
+    width: 10%;
+  }
+  .sec-6 .review-area {
+    display: flex;
+    height: 30vh;
+    justify-content: space-between;
+  }
+  .sec-6 .review-area .review-quote {
+    height: 50%;
+  }
+  .sec-6 .review-area hr {
+    width: 100%;
+  }
+  .sec-6 .rev-1 {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+  }
+  .sec-6 .person {
+    display: flex;
+  }
+  .sec-6 .person-info {
+    display: flex;
+    flex-direction: column;
+  }
+  .sec-6 .stars {
+    display: flex;
+  }
+  .sec-6 .rev-2 {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+  }
+  .sec-6 .rev-3 {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+  }
+  .sec-7 {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    height: 40vh;
+    align-items: center;
+
+    background-color: lightgray;
+  }
+  .sec-7 .s7-content {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: space-between;
+    height: 90%;
+  }
+  .sec-7 .s7-questions {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: space-between;
+    height: 80%;
+  }
+  .sec-7 .s7-questions h4 {
+    height: 25%;
+  }
+  .sec-7 hr {
+    width: 100%;
+    height: 1px;
+  }
+  .sec-7 .question {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  body {
+    color: #141414;
+  }
+
+  /* Footer Area for Mobile */
+  footer {
+    height: 45vh;
+  }
+  footer .footer-div {
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    margin: 0 auto;
+    height: 100%;
+    justify-content: space-between;
+
+    background-color: coral;
+  }
+  .footer-div hr {
+    width: 100%;
+  }
+  footer .footer-links {
+    display: flex;
+    justify-content: space-between;
+    height: 65%;
+    padding-top: 10%;
+  }
+  footer .mission-statement {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 60%;
+    justify-content: space-between;
+  }
+  footer .footer-logo {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+  }
+  footer .link-area-1 {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    justify-content: space-between;
+    height: 75%;
+  }
+  .link-area-title {
+    height: 35%;
+  }
+  .link-area-1 ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  footer .link-area-2 {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    justify-content: space-between;
+    height: 65%;
+  }
+  .link-area-2 ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  footer .link-area-3 {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    justify-content: space-between;
+    height: 85%;
+  }
+  .link-area-3 ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  footer .footer-contact {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    justify-content: space-between;
+    height: 50%;
+  }
+  footer .footer-contact .footer-socials {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  footer .footer-copyright {
+    height: 20%;
+    text-align: center;
+  }
 }
