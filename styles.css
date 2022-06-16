@@ -3,8 +3,9 @@
 :root {
   --main-font-color: #141414;
   --secondary-font-color: #F3F3F3;
-  --small-font-color: #b1b1b1;
+  --small-font-color: #8f8f8f;
   --main-website-color: #0000ff;
+  --accent-color: #ff7b00;
 }
 
 /* Reset CSS */
@@ -52,6 +53,12 @@ table {
 	border-spacing: 0;
 }
 
+body {
+  background: linear-gradient(40deg, #f1ecfd, #ffe9f0);
+  color: var(--main-font-color);
+  font-family: 'Poppins';
+}
+
 /* Nav Area for Desktop */
 nav {
   display: flex;
@@ -60,23 +67,50 @@ nav {
   margin: 0 auto;
   align-items: center;
   height: 8vh;
-
-  background-color: coral;
 }
 nav .nav-logo {
   display: flex;
   width: 10%;
   justify-content: space-between;
+  align-items: center;
+}
+nav .fa-mountain-sun {
+  color: #0000ff;
 }
 nav ul {
   display: flex;
   width: 40%;
   justify-content: space-between;
 }
+nav ul a {
+  text-decoration: none;
+  color: var(--main-font-color);
+}
 nav .nav-buttons {
   display: flex;
   width: 15%;
   justify-content: space-between;
+}
+nav .login-btn {
+  background-color: var(--main-font-color);
+  color: var(--secondary-font-color);
+}
+nav .register {
+  background: transparent;
+}
+/* Nav toggle button */
+.toggle-button {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: var(--main-font-color);
+  border-radius: 10px;
 }
 
 /* Main Area for Desktop */
@@ -85,8 +119,6 @@ nav .nav-buttons {
   width: 90%;
   margin: 0 auto;
   height: 90vh;
-
-  background-color: lightgrey;
 }
 .sec-1 .intro {
   display: flex;
@@ -94,10 +126,19 @@ nav .nav-buttons {
   width: 50%;
   justify-content: center;
 }
+.sec-1 .intro p {
+  color: var(--small-font-color);
+}
+.sec-1 .intro button {
+  background-color: var(--main-font-color);
+  color: var(--secondary-font-color);
+}
 .sec-2 {
   display: flex;
   width: 100%;
   height: 30vh;
+  color: var(--secondary-font-color);
+  background: linear-gradient(40deg, #0000ff, #0080ff);
 }
 .sec-2 .s2-content {
   display: flex;
@@ -106,8 +147,6 @@ nav .nav-buttons {
   height: 100%;
   justify-content: space-between;
   align-items: center;
-
-  background-color: gray;
 }
 .sec-2 .s2-content-item {
   display: flex;
@@ -115,6 +154,8 @@ nav .nav-buttons {
 .sec-2 hr {
   width: 1px;
   height: 18%;
+  border-style: none;
+  background-color: rgba(255, 255, 255, 0.75);
 }
 .sec-3 {
   display: flex;
@@ -123,8 +164,6 @@ nav .nav-buttons {
   height: 50vh;
   justify-content: center;
   align-items: center;
-
-  background-color: lightgray;
 }
 .sec-3 .s3-content {
   display: flex;
@@ -138,6 +177,9 @@ nav .nav-buttons {
   flex-direction: column;
   width: 40%;
   justify-content: center;
+}
+.sec-3 p {
+  color: var(--small-font-color);
 }
 .sec-3 .s3-part {
   display: flex;
@@ -154,8 +196,6 @@ nav .nav-buttons {
   margin: 0 auto;
   height: 65vh;
   justify-content: space-between;
-
-  background-color: gray;
 }
 .sec-4 .s4-content {
   display: flex;
@@ -163,11 +203,15 @@ nav .nav-buttons {
   width: 50%;
   justify-content: center;
 }
+.sec-4 .s4-content p {
+  color: var(--small-font-color);
+}
 .sec-4 .s4-content .s4-form {
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 8vh;
+  background-color: var(--secondary-font-color);
 }
 .sec-4 .s4-form hr {
   width: 1px;
@@ -180,9 +224,15 @@ nav .nav-buttons {
   justify-content: space-around;
   height: 100%;
 }
+.sec-4 .fa-solid {
+  color: var(--accent-color);
+}
 .sec-4 .s4-location-choice {
   display: flex;
   flex-direction: column;
+}
+.sec-4 .s4-location-choice select {
+  color: var(--small-font-color);
 }
 .sec-4 .s4-date {
   display: flex;
@@ -195,20 +245,23 @@ nav .nav-buttons {
   display: flex;
   flex-direction: column;
 }
+.sec-4 .s4-date-choice input {
+  color: var(--small-font-color);
+}
 .sec-4 .fa-magnifying-glass {
   display: flex;
   width: 15%;
   height: 100%;
   justify-content: center;
   align-items: center;
+  background-color: var(--main-font-color);
+  color: var(--secondary-font-color);
 }
 .sec-5 {
   display: flex;
   width: 90%;
   margin: 0 auto;
   height: 65vh;
-
-  background-color: lightgray;
 }
 .sec-5 .s5-content {
   display: flex;
@@ -216,8 +269,13 @@ nav .nav-buttons {
   justify-content: center;
   width: 50%;
 }
+.sec-5 .s5-content p {
+  color: var(--small-font-color);
+}
 .sec-5 .s5-content button {
   width: 25%;
+  background-color: var(--main-font-color);
+  color: var(--secondary-font-color);
 }
 .sec-6 {
   display: flex;
@@ -226,8 +284,6 @@ nav .nav-buttons {
   margin: 0 auto;
   height: 65vh;
   justify-content: center;
-
-  background-color: gray;
 }
 .sec-6 .top-area {
   display: flex;
@@ -250,11 +306,15 @@ nav .nav-buttons {
 }
 .sec-6 .review-area hr {
   width: 100%;
+  border-color: rgba(0, 0, 0, 0.25);
 }
 .sec-6 .rev-1 {
   display: flex;
   flex-direction: column;
   width: 25%;
+}
+.sec-6 .fa-quote-left {
+  color: var(--main-website-color);
 }
 .sec-6 .person {
   display: flex;
@@ -265,6 +325,9 @@ nav .nav-buttons {
 }
 .sec-6 .stars {
   display: flex;
+}
+.sec-6 .fa-star {
+  color: var(--accent-color);
 }
 .sec-6 .rev-2 {
   display: flex;
@@ -282,8 +345,6 @@ nav .nav-buttons {
   margin: 0 auto;
   height: 40vh;
   align-items: center;
-
-  background-color: lightgray;
 }
 .sec-7 .s7-content {
   display: flex;
@@ -329,8 +390,6 @@ footer .footer-div {
   margin: 0 auto;
   height: 100%;
   justify-content: space-between;
-
-  background-color: coral;
 }
 .footer-div hr {
   width: 100%;
@@ -450,7 +509,7 @@ footer .footer-copyright {
 }
 
 /* Mobile CSS */
-@media only screen and (max-width: 32em) {
+@media only screen and (max-width: 415px) {
   body {
 
     background-color: white;
@@ -458,29 +517,34 @@ footer .footer-copyright {
 
   /* Nav Area for Mobile */
   nav {
-    display: flex;
-    justify-content: space-between;
-    width: 90%;
-    margin: 0 auto;
-    align-items: center;
-    height: 8vh;
-
-    background-color: coral;
+    align-items: flex-start;
+    height: auto;
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
   }
   nav .nav-logo {
-    display: flex;
-    width: 10%;
-    justify-content: space-between;
+    width: 30%;
   }
   nav ul {
-    display: flex;
-    width: 40%;
-    justify-content: space-between;
+    flex-direction: column;
+    width: 30%;
+    display: none;
+    text-align: center;
+    justify-content: flex-end;
+    height: 25vh;
+  }
+  nav ul a {
+    padding: .5em 1em;
   }
   nav .nav-buttons {
+    width: 33%;
+  }
+  nav ul.active {
     display: flex;
-    width: 15%;
-    justify-content: space-between;
+  }
+  /* Nav toggle button Mobile*/
+  .toggle-button {
+    display: flex;
   }
 
   /* Main Area for Mobile */
@@ -606,7 +670,6 @@ footer .footer-copyright {
     display: none;
   }
   .sec-7 {
-    background-color: lightgray;
     height: 80vh;
     flex-direction: column;
     justify-content: center;
@@ -622,21 +685,7 @@ footer .footer-copyright {
 
   /* Footer Area for Mobile */
   footer {
-
     height: 80vh;
-  }
-  footer .footer-div {
-    display: flex;
-    width: 90%;
-    flex-direction: column;
-    margin: 0 auto;
-    height: 100%;
-    justify-content: space-between;
-
-    background-color: coral;
-  }
-  footer .footer-div hr {
-    width: 100%;
   }
   footer .footer-links {
     flex-wrap: wrap;
@@ -646,11 +695,6 @@ footer .footer-copyright {
     width: 50%;
     height: 34%;
     justify-content: space-around;
-  }
-  footer .footer-logo {
-    display: flex;
-    justify-content: space-between;
-    width: 40%;
   }
   footer .link-area-1 {
     width: 50%;
@@ -687,7 +731,152 @@ footer .footer-copyright {
     text-align: center;
   }
   footer .footer-copyright {
-    text-align: center;
     height: 10%;
   }
+}
+
+/* CSS for Small Mobiles */
+@media only screen and (max-width: 321px) {
+  /* Nav Area for Small Mobiles */
+  nav .nav-logo {
+    width: 37%;
+  }
+  nav ul {
+    width: 18%;
+    display: none;
+    margin-top: 3em;
+  }
+  nav .nav-buttons {
+    width: 39%;
+  }
+  nav ul a {
+    padding: 0.5em 0;
+  }
+  nav .nav-buttons {
+    width: 37%;
+    justify-content: flex-end;
+  }
+  nav .register {
+    display: none;
+  }
+
+  /* Main Area for Small Mobile */
+  .sec-1 {
+    height: 60vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .sec-1 .intro {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    justify-content: center;
+  }
+  .sec-1 img {
+    height: 50%;
+    width: 65%;
+    
+    border: 1px solid black;
+  }
+  .sec-2 {
+    height: 35vh;
+  }
+  .sec-2 .s2-content {
+    flex-wrap: wrap;
+  }
+  .sec-2 .s2-content-item {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sec-2 hr {
+    display: none;
+  }
+  .sec-3 {
+    height: 200vh;
+  }
+  .sec-3 .s3-content {
+    flex-direction: column;
+    height: 90%;
+  }
+  .sec-3 .s3-intro {
+    width: 100%;
+    height: 30%;
+    align-items: center;
+  }
+  .sec-3 .s3-part {
+    width: 100%;
+    height: 18%;
+    align-items: center;
+  }
+  .sec-3 .s3-part img {
+    height: 7.5vh;
+    width: 15vw;
+
+    border: 1px solid black;
+  }
+  .sec-4 {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 90vh;
+  }
+  .sec-4 img {
+    height: 50%;
+    width: 100%;
+
+    border: 1px solid black;
+  }
+  .sec-4 .s4-content {
+    width: 75%;
+  }
+  .sec-4 .s4-content .s4-form {
+    flex-direction: column;
+
+    height: 27vh;
+  }
+  .sec-4 .s4-form hr {
+    display: none;
+  }
+  .sec-4 .s4-location {
+    align-items: flex-end;
+    width: 65%;
+    height: 33%;
+  }
+  .sec-4 .s4-location-choice {
+    width: 60%;
+  }
+  .sec-4 .s4-date {
+    width: 65%;
+    align-items: flex-end;
+    height: 34%;
+  }
+  .sec-4 .s4-date-choice {
+    width: 60%;
+  }
+  .sec-4 .fa-magnifying-glass {
+    height: 33%;
+  }
+  .sec-6 {
+    height: 80vh;
+  }
+  .sec-6 .review-area {
+    height: 50vh;
+  }
+  .sec-6 .rev-1 {
+    width: 45%;
+  }
+  .sec-6 .rev-2 {
+    width: 45%;
+  }
+  .sec-6 .rev-3 {
+    display: none;
+  }
+
+
+  /* Footer Area for Small Mobile */
+
 }
