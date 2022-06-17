@@ -296,6 +296,12 @@ nav .register {
   justify-content: space-between;
   width: 10%;
 }
+.sec-6 .fa-arrow-left-long {
+  color: var(--small-font-color);
+}
+.sec-6 .fa-arrow-right-long {
+  color: var(--main-font-color);
+}
 .sec-6 .review-area {
   display: flex;
   height: 30vh;
@@ -306,7 +312,9 @@ nav .register {
 }
 .sec-6 .review-area hr {
   width: 100%;
-  border-color: rgba(0, 0, 0, 0.25);
+  height: 1px;
+  border-style: none;
+  background-color: rgba(0, 0, 0, 0.20);
 }
 .sec-6 .rev-1 {
   display: flex;
@@ -323,8 +331,17 @@ nav .register {
   display: flex;
   flex-direction: column;
 }
+.sec-6 .person-info p {
+  color: var(--small-font-color);
+}
 .sec-6 .stars {
   display: flex;
+}
+.sec-6 .rev-2 i:nth-of-type(5) {
+  color: var(--small-font-color);
+}
+.sec-6 .rev-3 i:nth-of-type(5) {
+  color: var(--small-font-color);
 }
 .sec-6 .fa-star {
   color: var(--accent-color);
@@ -353,8 +370,15 @@ nav .register {
   justify-content: space-between;
   height: 90%;
 }
+.sec-7 .s7-sentence {
+  color: var(--small-font-color);
+}
 .sec-7 .s7-email-submit {
   display: flex;
+}
+.sec-7 .s7-email-submit input:nth-of-type(2) {
+  background-color: var(--main-font-color);
+  color: var(--secondary-font-color);
 }
 .sec-7 .s7-questions {
   display: flex;
@@ -366,9 +390,14 @@ nav .register {
 .sec-7 .s7-questions h4 {
   height: 25%;
 }
+.sec-7 .s7-questions i {
+  color: var(--main-website-color);
+}
 .sec-7 hr {
   width: 100%;
   height: 1px;
+  border-style: none;
+  background-color: rgba(0, 0, 0, 0.20);
 }
 .sec-7 .question {
   display: flex;
@@ -382,6 +411,8 @@ body {
 /* Footer Area for Desktop */
 footer {
   height: 45vh;
+  background: linear-gradient(40deg, #0000ff, #0080ff);
+  color: var(--secondary-font-color);
 }
 footer .footer-div {
   display: flex;
@@ -465,6 +496,9 @@ footer .footer-contact .footer-socials {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+footer .footer-socials a {
+  color: var(--secondary-font-color);
 }
 footer .footer-copyright {
   height: 20%;
