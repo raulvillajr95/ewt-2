@@ -1054,32 +1054,51 @@ footer .footer-copyright {
 
 /* CSS for Small Mobiles */
 @media only screen and (max-width: 321px) {
-  /* Nav Area for Small Mobiles */
-  nav .nav-logo {
-    width: 37%;
-  }
-  nav ul {
-    width: 18%;
-    display: none;
-    margin-top: 3em;
-  }
-  nav .nav-buttons {
-    width: 39%;
-  }
-  nav ul a {
-    padding: 0.5em 0;
-  }
-  nav .nav-buttons {
-    width: 37%;
-    justify-content: flex-end;
-  }
-  nav .register {
-    display: none;
+  body {
+
+    background-color: white;
   }
 
-  /* Main Area for Small Mobile */
+  /* Nav Area for Mobile */
+  nav {
+    align-items: flex-start;
+    height: auto;
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
+  }
+  nav .nav-logo {
+    width: 40%;
+  }
+  nav ul {
+    flex-direction: column;
+    width: 20%;
+    display: none;
+    text-align: center;
+    justify-content: flex-end;
+    height: 25vh;
+    margin-top: 3rem;
+  }
+  nav ul a {
+    padding: .5em 0;
+  }
+  nav .nav-buttons {
+    width: 25%;
+    justify-content: flex-end;
+  }
+  nav .nav-buttons button:nth-of-type(2) {
+    display: none;
+  }
+  nav ul.active {
+    display: flex;
+  }
+  /* Nav toggle button Mobile*/
+  .toggle-button {
+    display: flex;
+  }
+
+  /* Main Area for Mobile */
   .sec-1 {
-    height: 60vh;
+    height: 65vh;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -1087,11 +1106,23 @@ footer .footer-copyright {
   .sec-1 .intro {
     display: flex;
     flex-direction: column;
-    width: 65%;
+    width: 100%;
     justify-content: center;
   }
+  .sec-1 .intro h1 {
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  .sec-1 .intro button {
+    padding: 0.6rem 1rem;
+    font-size: 0.8rem;
+    border-radius: 2rem;
+    border-style: none;
+  }
   .sec-1 .s1-img {
-    width: 75%;
+    height: fit-content;
+    width: 50%;
   }
   .sec-2 {
     height: 35vh;
@@ -1109,7 +1140,7 @@ footer .footer-copyright {
     display: none;
   }
   .sec-3 {
-    height: 200vh;
+    height: 115vh;
   }
   .sec-3 .s3-content {
     flex-direction: column;
@@ -1117,13 +1148,23 @@ footer .footer-copyright {
   }
   .sec-3 .s3-intro {
     width: 100%;
-    height: 30%;
+    height: 20%;
     align-items: center;
+  }
+  .sec-3 .s3-intro h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  .sec-3 .s3-intro p {
+    margin-bottom: 0;
   }
   .sec-3 .s3-part {
     width: 100%;
     height: 18%;
     align-items: center;
+  }
+  .sec-3 .s3-part h3 {
+    font-size: 1.2rem;
   }
   .sec-3 .s3-part img {
     height: 7.5vh;
@@ -1134,57 +1175,199 @@ footer .footer-copyright {
   .sec-4 {
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-
-    height: 90vh;
+    justify-content: space-around;
+    height: 110vh;
+  }
+  .sec-4 .s4-img {
+    height: 100px;
+    width: 100%;
+    height: fit-content;
   }
   .sec-4 .s4-content {
-    width: 75%;
+    width: 100%;
+  }
+  .sec-4 .s4-content h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
   }
   .sec-4 .s4-content .s4-form {
     flex-direction: column;
-
-    height: 27vh;
+    height: 28vh;
+    width: 75%;
+    margin: 0 auto;
+    justify-content: space-around;
   }
   .sec-4 .s4-form hr {
     display: none;
   }
   .sec-4 .s4-location {
-    align-items: flex-end;
+    align-items: center;
     width: 65%;
-    height: 33%;
+    height: 30%;
   }
   .sec-4 .s4-location-choice {
     width: 60%;
   }
   .sec-4 .s4-date {
     width: 65%;
-    align-items: flex-end;
-    height: 34%;
+    align-items: center;
+    height: 30%;
   }
   .sec-4 .s4-date-choice {
     width: 60%;
   }
   .sec-4 .fa-magnifying-glass {
-    height: 33%;
+    height: 3rem;
+    width: 6rem;
+  }
+  .sec-5 {
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: center;
+    height: 115vh;
+  }
+  .sec-5 .s5-content {
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .sec-5 .s5-content h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  .sec-5 .s5-content button {
+    width: 60%;
+  }
+  .sec-5 .s5-img {
+    height: fit-content;
+    width: 100%;
   }
   .sec-6 {
-    height: 80vh;
+    height: 100vh;
+    justify-content: space-around;
+  }
+  .sec-6 .top-area {
+    flex-direction: column;
+    align-items: center;
+    height: 10rem;
+  }
+  .sec-6 .top-area h2 {
+    font-size: 2rem;
+    margin-top: 2rem;
+  }
+  .sec-6 .top-area .top-arrows {
+    width: 50%;
   }
   .sec-6 .review-area {
-    height: 50vh;
+    height: 15rem;
+  }
+  .sec-6 .review-area .review-quote {
+    height: 5rem;
   }
   .sec-6 .rev-1 {
-    width: 45%;
+    width: 100%;
   }
   .sec-6 .rev-2 {
-    width: 45%;
+    display: none;
   }
   .sec-6 .rev-3 {
     display: none;
   }
+  .sec-7 {
+    height: 80vh;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 4rem;
+  }
+  .sec-7 .s7-content {
+    width: 100%;
+    justify-content: space-around;
+  }
+  .sec-7 .s7-content h2 {
+    font-size: 2rem;
+  }
+  .sec-7 .s7-email-submit {
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+  }
+  .sec-7 .s7-email-submit input:nth-of-type(1) {
+    width: 60%;
+    margin: 0 auto 0.25rem auto;
+    text-align: center;
+  }
+  .sec-7 .s7-email-submit input:nth-of-type(2) {
+    padding: 0.75rem 1rem;
+    width: 50%;
+    margin: 0 auto;
+  }
+  .sec-7 .s7-questions {
+    width: 100%;
+    justify-content: space-around;
+  }
 
-
-  /* Footer Area for Small Mobile */
+  /* Footer Area for Mobile */
+  footer {
+    height: 90vh;
+  }
+  footer .footer-links {
+    flex-wrap: wrap;
+    height: 75%;
+  }
+  footer .mission-statement {
+    width: 50%;
+    height: 34%;
+    justify-content: space-around;
+  }
+  footer .link-area-1 {
+    width: 50%;
+    height: 34%;
+    justify-content: space-around;
+    align-items: center;
+  }
+  footer .link-area-title {
+    display: flex;
+    align-items: center;
+  }
+  footer .link-area-1 ul {
+    justify-content: space-around;
+    align-items: center;
+  }
+  footer .link-area-2 {
+    width: 50%;
+    height: 33%;
+  }
+  footer .link-area-2 ul {
+    justify-content: space-around;
+  }
+  footer .link-area-3 {
+    width: 50%;
+    height: 33%;
+    align-items: center;
+  }
+  footer .link-area-3 ul {
+    justify-content: space-around;
+    align-items: center;
+  }
+  footer .footer-contact {
+    width: 85%;
+    height: 33%;
+    justify-self: center;
+    justify-content: space-around;
+    margin: 2rem auto 0 auto;
+    align-items: center;
+  }
+  footer hr {
+    margin-top: 3.5rem;
+  }
+  footer .footer-socials {
+    width: 100%;
+  }
+  footer .footer-socials a {
+    font-size: 2.2rem;  
+  }
+  footer .footer-copyright {
+    height: 10%;
+  }
 
 }
